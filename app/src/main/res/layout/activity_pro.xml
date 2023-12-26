@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/pink">
+
+            <ImageView
+                android:id="@+id/imageview_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/profile_pic" />
+
+            <TextView
+                android:id="@+id/show_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageview_profile"
+                android:text="Welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/black"/>
+
+
+
+        </RelativeLayout>
+        <!---name-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_pic"
+                android:background="@drawable/ic_profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_fullname"
+                android:layout_alignStart="@id/ic_pic"
+                android:hint="loading"
+                android:textSize="18sp"
+                android:layout_marginStart="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/show_fullname"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divide_name"/>
+
+            <!---email-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_email"
+                android:background="@drawable/ic_email"
+                android:layout_below="@+id/divide_name"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_email"
+                android:layout_alignStart="@id/ic_email"
+                android:hint="loading"
+                android:textSize="18sp"
+                android:layout_below="@+id/divide_name"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/show_email"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divider_email"/>
+
+            <!---dob-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_dob"
+                android:background="@drawable/ic_birthday"
+                android:layout_below="@+id/divider_email"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_dob"
+                android:layout_alignStart="@id/ic_dob"
+                android:hint="loading"
+                android:textSize="18sp"
+                android:layout_below="@+id/divider_email"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/show_dob"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divider_dob"/>
+
+            <!---contact number-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_mobile"
+                android:background="@drawable/ic_mobile"
+                android:layout_below="@+id/divider_dob"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_mobile"
+                android:layout_alignStart="@id/ic_mobile"
+                android:hint="loading"
+                android:textSize="18sp"
+                android:layout_below="@+id/divider_dob"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/show_mobile"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divider_mobile"/>
+
+            <!---location-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_location"
+                android:background="@drawable/ic_location"
+                android:layout_below="@+id/divider_mobile"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_location"
+                android:layout_alignStart="@id/ic_location"
+                android:hint="loading"
+                android:textSize="18sp"
+                android:layout_below="@+id/divider_mobile"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/show_location"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divider_location"/>
+
+
+            <!-- Add this ProgressBar wherever you want it in your layout -->
+            <ProgressBar
+                android:id="@+id/progressorbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone"
+
+                style="?android:attr/progressBarStyleLarge"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+            
+
+</ScrollView>

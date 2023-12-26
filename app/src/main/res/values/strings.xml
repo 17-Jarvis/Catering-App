@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dragon</string>
+    <string name="label_email">Email Address*</string>
+    <string name="label_dob">dob(dd/mm/yyyy)*</string>
+    <string name="label_mobile">mobile*</string>
+    <string name="label_location">location*</string>
+
+
+</resources>

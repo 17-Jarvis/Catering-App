@@ -1,0 +1,7 @@
+<!-- res/drawable/rounded_search_view_bg.xml -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="40dp" /> <!-- Adjust the radius to control corner rounding -->
+    <solid android:color="@color/white" /> <!-- Set the background color -->
+</shape>
